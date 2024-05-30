@@ -157,7 +157,7 @@
             }
 
             try {
-                const response = await fetch(`https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec?date=${date}`);
+                const response = await fetch(`https://script.google.com/macros/s/AKfycbzZnC2VdV25-mtyA-KDa9y7P4LkEWyEbKrlyWuJRgjwyfdZ_Znfu1OTOuopNTfWqpYT/exec/exec?date=${date}`);
                 const data = await response.json();
                 calendarCache[date] = data.events;
                 return data.events;
